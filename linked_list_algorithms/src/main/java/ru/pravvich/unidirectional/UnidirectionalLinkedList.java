@@ -14,15 +14,15 @@ public class UnidirectionalLinkedList<V> implements Iterable<V> {
     /**
      * Start point node value always null.
      */
-    private Node start;
+    protected Node start;
     /**
      * Refer to last addition element. Before first edition equals null.
      */
-    private Node last;
+    protected Node last;
     /**
      * Amount contains element.
      */
-    private int size;
+    protected int size;
 
     /**
      * Default constructor.
@@ -98,7 +98,7 @@ public class UnidirectionalLinkedList<V> implements Iterable<V> {
     /**
      * Determines Class which contain user's value and refer to next element.
      */
-    private class Node {
+    protected class Node {
         /**
          * User's value.
          */
@@ -113,7 +113,7 @@ public class UnidirectionalLinkedList<V> implements Iterable<V> {
          *
          * @param value for save.
          */
-        private Node(V value) {
+        protected Node(V value) {
             this.value = value;
         }
 

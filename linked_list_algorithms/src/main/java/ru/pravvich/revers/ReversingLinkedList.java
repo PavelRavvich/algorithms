@@ -1,10 +1,22 @@
 package ru.pravvich.revers;
 
+/**
+ * Task. Reversing Linked list like from 1->2->3 to 3->2->1.
+ * Solution: {@link ReversingLinkedList#reverse()}.
+ *
+ * @param <T> type of valid values for current container.
+ */
 public class ReversingLinkedList<T> {
-    // ist head
+    /**
+     * Head of list.
+     */
     private Node head;
 
-    // constructor
+    /**
+     * Default constructor.
+     *
+     * @param values all values.
+     */
     @SafeVarargs
     public ReversingLinkedList(T... values) {
 
@@ -28,6 +40,11 @@ public class ReversingLinkedList<T> {
         }
     }
 
+    /**
+     * Revers the sequence of all values in list.
+     *
+     * @return reversed list.
+     */
     public ReversingLinkedList<T> reverse() {
 
         Node node = head;

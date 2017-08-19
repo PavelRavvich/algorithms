@@ -1,7 +1,17 @@
 package ru.pravvich.findLargeStringInArr;
 
+/**
+ * Tsk: find largest length in string array.
+ * Solution: {@link LargeStringFinder#findLargest(String[])}.
+ */
 public class LargeStringFinder {
 
+    /**
+     * Find largest length String in arr.
+     *
+     * @param src for analysis.
+     * @return String with largest length.
+     */
     public String findLargest(String[] src) {
 
         if (src.length == 0) throw new IllegalArgumentException("Arr is empty");
@@ -27,10 +37,4 @@ public class LargeStringFinder {
         return src[index];
     }
 
-    public static void main(String[] args) {
-
-        String[] arr = {"asd", "sd", "jhjkgh", "h"};
-
-        System.out.println(new LargeStringFinder().findLargest(arr));
-    }
 }

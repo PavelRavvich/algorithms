@@ -11,6 +11,7 @@
         <module>linked_list_algorithms</module>
         <module>tree_algorithms</module>
         <module>arrays_algorithms</module>
+        <module>traditional_sort_algotythms</module>
     </modules>
     <packaging>pom</packaging>
     <name>algorithms</name>

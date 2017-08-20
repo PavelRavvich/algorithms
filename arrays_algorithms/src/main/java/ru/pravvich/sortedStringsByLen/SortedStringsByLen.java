@@ -1,5 +1,8 @@
 package ru.pravvich.sortedStringsByLen;
 
+/**
+ * Task: sorting String[] by len of elems like {"12", "1"}->{"1", "12"}.
+ */
 public class SortedStringsByLen {
 
     public String[] sortByLengthBubble(String[] arr) {

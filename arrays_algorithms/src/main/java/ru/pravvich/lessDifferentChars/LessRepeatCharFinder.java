@@ -1,7 +1,6 @@
 package ru.pravvich.lessDifferentChars;
 
 import com.sun.istack.internal.NotNull;
-import ru.pravvich.LessMiddleLenGetter;
 
 import java.util.*;
 
@@ -10,19 +9,19 @@ import java.util.*;
  *
  * Like: ["abca", "abcdef"] answer "abca".
  */
-public class LessDifferentCharFinder {
+public class LessRepeatCharFinder {
 
-    public String getLessDifferentChars(@NotNull final String[] src) {
+    public String getLessRepeatChars(@NotNull final String[] src) {
 
         if (src.length == 0) throw new IllegalArgumentException();
 
         String result = src[0];
 
-        int tmp = getAmountDifferentCharsIn(src[0]);
+        int tmp = getAmountRepeatCharsIn(src[0]);
 
         for (int i = 1; i < src.length; i++) {
 
-            final int amount = getAmountDifferentCharsIn(src[i]);
+            final int amount = getAmountRepeatCharsIn(src[i]);
 
             if (tmp > amount) {
 
@@ -35,7 +34,7 @@ public class LessDifferentCharFinder {
         return result;
     }
 
-    private int getAmountDifferentCharsIn(@NotNull final String s) {
+    private int getAmountRepeatCharsIn(@NotNull final String s) {
 
         final Map<Character, Integer> map = new HashMap<>();
 

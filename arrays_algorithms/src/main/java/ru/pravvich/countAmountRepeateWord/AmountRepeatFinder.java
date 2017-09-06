@@ -1,7 +1,6 @@
 package ru.pravvich.countAmountRepeateWord;
 
 import java.util.Arrays;
-import java.util.Map;
 
 /**
  * Task: find amount repeat like:
@@ -34,9 +33,5 @@ public class AmountRepeatFinder {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new AmountRepeatFinder().getAmountIterate("Hello world, world world.","world"));
     }
 }

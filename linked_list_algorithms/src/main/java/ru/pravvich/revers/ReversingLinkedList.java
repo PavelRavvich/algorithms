@@ -47,22 +47,22 @@ public class ReversingLinkedList<T> {
      */
     public ReversingLinkedList<T> reverse() {
 
-        Node node = head;
+        Node current = head;
 
         Node previous = null;
 
-        while (node != null) {
+        while (current != null) {
 
             //Next item.
-            Node tmp = node.getNext();
+            Node next = current.getNext();
 
             //Swap items.
-            node.setNext(previous);
-            previous = node;
-            head = node;
+            current.setNext(previous);
+            previous = current;
+            head = current;
 
             //Next item.
-            node = tmp;
+            current = next;
         }
 
         return this;
